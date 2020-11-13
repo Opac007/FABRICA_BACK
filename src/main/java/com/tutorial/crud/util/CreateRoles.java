@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import com.tutorial.crud.security.entity.Rol;
 import com.tutorial.crud.security.enums.RolNombre;
-import com.tutorial.crud.security.service.RolService;
+import com.tutorial.crud.rol.service.RolService;
 
 @Component
 public class CreateRoles implements CommandLineRunner{

@@ -11,7 +11,7 @@ import com.tutorial.crud.menu.entity.Menu;
 import com.tutorial.crud.menu.service.MenuService;
 import com.tutorial.crud.security.entity.Rol;
 import com.tutorial.crud.security.enums.RolNombre;
-import com.tutorial.crud.security.service.RolService;
+import com.tutorial.crud.rol.service.RolService;
 
 @Component
 public class CreateMenu implements CommandLineRunner{
