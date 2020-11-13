@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.tutorial.crud.estilo.entity.Estilo;
 import com.tutorial.crud.estilo.repository.EstiloRepository;
+import com.tutorial.crud.security.enums.RolNombre;
 
 @Service
 @Transactional
@@ -39,6 +40,14 @@ public class EstiloService {
 
     public void delete(int id){
         estiloRepository.deleteById(id);
+    }
+
+    public boolean existsByDescription(String description){
+        return estiloRepository.existsByDescription(description);
+    }
+
+    public boolean existsByValor(String valor){
+        return estiloRepository.existsByValor(valor);
     }
 
 }
